@@ -46,4 +46,4 @@ The Unity version that we used to creat the Game is "", which you may download [
 
   
 ## Classdiagramms
-### GameManager
+![](https://github.com/PolterSkun/Info-Project/blob/5dbfc0751d63d14940d7eec144a27f13051370d9/Classdiagram.vpd)
