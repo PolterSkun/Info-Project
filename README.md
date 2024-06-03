@@ -9,9 +9,10 @@ First, open git bash and input the following line:\
 This creats a clone of the project on your PC.\
 The Unity version that we used to creat the Game is "", which you may download [here]().\
 
-## Time schedule 
-## Classdiagramms
-  | **When?** | **Chapter?** | **What?** |
+## What we have done
+### Time schedule 
+
+| **When?** | **Chapter?** | **What?** |
   | --- | --- | --- |
   | 08.04.2024 | The Beginning | Figured out basic Idea, expanded on it later| 
   | 10.04.2024 | The Beginning | Finished basic idea, had a first sketch of the game|
@@ -32,5 +33,6 @@ The Unity version that we used to creat the Game is "", which you may download [
   | 01.06.2024 | Almost finished | Did 90% of our whole game in one day (just a joke) |
   | 02.09.2024 | Almost finished | Almost final UI-Upgrades and backend to frontend stuff |
   | 03.09.2024 | Almost finished | Almost finished, bug fixes, final things we could do, etc. |
-
+  
+## Classdiagramms
 ### GameManager
