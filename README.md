@@ -35,7 +35,8 @@ The Unity version that we used to creat the Game is "", which you may download [
   | 03.09.2024 | Almost finished | Almost finished, bug fixes, final things we could do, etc. |
 
 ### Milestones
-
+  | **When?** | **What?** |
+  | --- | --- |
   | 10.04.2024 | Final Idea |
   | 15.04.2024 | Created Unity project | 
   | 17.04.2024 | First working objects |
