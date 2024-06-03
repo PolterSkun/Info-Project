@@ -33,6 +33,16 @@ The Unity version that we used to creat the Game is "", which you may download [
   | 01.06.2024 | Almost finished | Did 90% of our whole game in one day (just a joke) |
   | 02.09.2024 | Almost finished | Almost final UI-Upgrades and backend to frontend stuff |
   | 03.09.2024 | Almost finished | Almost finished, bug fixes, final things we could do, etc. |
+
+### Milestones
+
+  | 10.04.2024 | Final Idea |
+  | 15.04.2024 | Created Unity project | 
+  | 17.04.2024 | First working objects |
+  | 03.05.2024 | Finished backend scripts |
+  | 14.05.2024 | Corrected Jan’s spelling mistakes | 
+  | 03.06.2024 | Finished |
+
   
 ## Classdiagramms
 ### GameManager
