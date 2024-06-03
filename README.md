@@ -10,6 +10,5 @@ This creats a clone of the project on your PC.\
 The Unity version that we used to creat the Game is "", which you may download [here]().\
 
 ## Time schedule 
-| **Date** |
 ## Classdiagramms
 ### GameManager
