@@ -1,6 +1,6 @@
 # Info-Project
 Hello, and welcome to CupcakeStudios.\
-Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into the boots of an agent of a grand corporation and exploit planets and labour for their resources. (This aspect is sadly not yet too much build upon and explained in the game, but will perhaps be addeted in upcoming updates).
+Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into the boots of an agent of a grand corporation and exploit planets and labour for resources. (This aspect is sadly not yet too much build upon and explained in the game, but will perhaps be addeted in upcoming updates).
 ## Some Gerneral Information
 ### Why was this Project created?
 It was created as a part of a school project and its main focus was to show what we had learned, to develope new skills and to show them off.
