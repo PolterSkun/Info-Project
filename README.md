@@ -52,7 +52,10 @@ You can find the build for our game, `CupcakeSpaceExploitation`, [here](). Thoug
   | 14.05.2024 | Corrected Jan’s spelling mistakes | 
   | 03.06.2024 | Finished |
 
-  
+### Problems 
+
+The biggets problem we had to face, was learning C#, since all of us had little to no experience with it. But with the help of Tutorials, experienced people and the smiliarity to other programmiung languages, out team adapted really quickly. Another problem was time mangement, because we had a tight schedule and maybe procrastinated a bit. The last and smallest problem we had was exporting our project. If not experienced enough that can cause issues such as UI bugs or our game not being optimized enough.  
+
 ## Class diagram
 ### original Class diagram
 ### final Class diagram
