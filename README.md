@@ -1,6 +1,6 @@
 # Info-Project
 Hello, and welcome to CupcakeStudios.\
-Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into the boots of an agent of a grand corporation and exploit planets and labour for resources. (This aspect is sadly not yet explored and explained in the game, but will perhaps be addeted in upcoming updates).
+Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into the boots of an agent of a grand corporation and exploit planets and labour for resources. (This aspect is sadly not yet explored and build upon in the game, but will perhaps be addeted in upcoming updates).
 ## Some Gerneral Information
 ### Why was this Project created?
 It was created as a part of a school project and its main focus was to show what we had learned, to develope new skills and to show them off.
@@ -11,11 +11,11 @@ First, open git bash and input the following line:\
 `git clone https://github.com/PolterSkun/Info-Project.git`\
 This creats a clone of the project on your PC.\
 Then open UnityHub, add the projects to your project list and start the Project.\
-This may not work, due to your Version of Unity, which must match ours, in order to view the project. We used `Unity Version "2023.3.3f1"`, which you may download [here]().\
+This may not work, due to your Version of Unity, which must match ours, in order to view the project. We used `Unity Version "2023.2.3f1"`, which you may download [here](https://unity.com/ja/releases/editor/whats-new/2023.2.3).\
 For clarity reasons we divided our scripts into 2 folders: ui and notui.
 
 ### How to play
-You can find the build for our game, `CupcakeSpaceExploitation`, [here](). Though be warned: This project is far from finished and is subject to many bugs. Futhermore it is NOT feature complete. In fact the main gamplay-loop is not yet accessible for the player to enjoy.
+You can find the build for our game, `CupcakeSpaceExploitation`, [here]() (does not yet work :( ). Though be warned: This project is far from finished and is subject to many bugs. Futhermore it is NOT feature complete. In fact the main gamplay-loop is not yet accessible for the player to enjoy.
 
 ## What we have done:
 ### Time schedule 
