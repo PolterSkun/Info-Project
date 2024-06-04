@@ -3,11 +3,9 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Presets;
 using UnityEngine;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
-using static Unity.VisualScripting.Metadata;
 
 public class PlanetSkriptButton : MonoBehaviour
 {

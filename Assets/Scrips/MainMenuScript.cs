@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Presets;
 using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
@@ -81,7 +80,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void TrueExitGame(bool isSure)
     {
-        isSure = this.isSure;
+        this.isSure = isSure;
             if (isSure)
             {
                 Application.Quit();
