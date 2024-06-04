@@ -58,7 +58,9 @@ The biggets problem we had to face, was learning C#, since all of us had little 
 
 ## Class diagram
 ### original Class diagram
-### final Class diagram
+In the brainstorming-phase we tought our project very small\
 ![](https://github.com/PolterSkun/Info-Project/blob/48489ea50527762e3e66bf4a900dc7f7b3a115f6/readme_resources/Class_diagram_original.png)
+### final Class diagram
+In the development-phase we realised that our first idea was completly wrong and our project was going to be much larger\
+![](https://github.com/PolterSkun/Info-Project/blob/48489ea50527762e3e66bf4a900dc7f7b3a115f6/readme_resources/Classdiagramm.png)\
 For an easy read, we did not include any get-funktion or parameter for any funktion
-![](https://github.com/PolterSkun/Info-Project/blob/48489ea50527762e3e66bf4a900dc7f7b3a115f6/readme_resources/Classdiagramm.png)
