@@ -7,12 +7,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    //Field to connect Objects from Unity to the skript
     [SerializeField] GameObject MainMenu;
     [SerializeField] public TMP_InputField playerAmountInput;
 
+    //This is used to make GameManager a Singleton; This is useful because there should only be 1 GameManager
     public static GameManager instance;
 
+    //For the Objects of the other classes
     public static ResourceManager rescourceManager;
     public static PlayerManager playerManager;
     public static Logistics logisticsManager;
@@ -20,18 +22,18 @@ public class GameManager : MonoBehaviour
     public static PlanetManager planetManager;
     public static MarketScript marketManager;
 
+    //To keep track of the very important variables
     public int playerAmount;
     public int turnCounter = 1;
     public int subTurnCounter = 1;
     public int currentPlanetNumber;
 
 
-    //public static DisplayManager displayManager = new();
-
     public static GameManager Instance { get { return instance; } }
 
     private void Awake()
     {
+        //Used to make sure there is only one instance of GameManager
         MainMenu.SetActive(true);
         if (instance != null && instance != this)
         {
@@ -44,29 +46,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update   
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    //creation of event to "soft"-link our scripts
     public event Action OnPlanetButtonClick;
     public event Action OnPlanetBackButtonClick;
     public event Action OnNextTurn;
     public event Action OnStart;
-    //public event Action OnFactoryButtonClick;
+    //public event Action OnFactoryButtonClick;this could be used later
 
+
+    //Starst the game; is triggered by the done button in the menu
     public void startGame() // Es tut mir leid für alle die diesen Code lesen und verstehen müssen, aber ich hab ein paar probleme mit dem Code grad und deswegen mach ich ihn nicht einheitlich; ich wünschte ich könnte es 
     {
         startMainObjects(int.Parse(playerAmountInput.text), 5, 5);
         start();
     }
 
+
+    //does as the name says
     public void startMainObjects(int realPlayerN, int realPlanetN, int planetConnections)
     {
         Debug.Log("PlayerAmount" + realPlayerN); //Bitte wegmachen vor Export
@@ -81,6 +77,8 @@ public class GameManager : MonoBehaviour
         marketManager = new(planetN);
     }
 
+
+    //is called by the next turn-button
     public void nextTurnButtonClick()
     {
         subTurnCounter++;
@@ -95,12 +93,13 @@ public class GameManager : MonoBehaviour
         nextTurn();
     }
 
+    //is called by the buttons in the middle of the main view
     public void getCurrentPlanetNumber(int currentPlanetNumber)
     {
         this.currentPlanetNumber = currentPlanetNumber;
     }
 
-    //ALLLES UNTER DEISER ZEILE SIND FUNKTIONEN FÜR EVENTS
+    //everything under this line is a funktion dedicated to their event; they just check if the event is null and if not then they execute the event (they dont kill it)
 
     public void planetButtonClick()
     {
@@ -132,13 +131,4 @@ public class GameManager : MonoBehaviour
             OnStart();
         }
     }
-
-    /*public void FactoryButtonClick()
-    {
-        if(OnFactoryButtonClick != null)
-        {
-            OnFactoryButtonClick();
-        }
-    }*/
-
 }

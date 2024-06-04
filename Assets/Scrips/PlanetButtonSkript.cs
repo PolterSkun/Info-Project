@@ -41,9 +41,10 @@ public class PlanetSkriptButton : MonoBehaviour
     public void OnPlanetClick(int planetNumber)
     {
         currentPlanet = planets.Find(go => go.name == "Planet" + planetNumber);
-        GameManager.instance.planetButtonClick();
+        GameManager.instance.planetButtonClick();//triggers the funiktion planetButtonClick which triggers the event OnnetBackButtonClick
     }
 
+    //Decides what should be displayed
     private void GoToPlanetSpecific()
     {
         buttonGroup.SetActive(false);
@@ -57,7 +58,7 @@ public class PlanetSkriptButton : MonoBehaviour
 
     public void OnBackToOverViewClick()
     {
-        GameManager.instance.planetBackButtonClick();
+        GameManager.instance.planetBackButtonClick();//triggers the event planetBackButtonClick
     }
 
 

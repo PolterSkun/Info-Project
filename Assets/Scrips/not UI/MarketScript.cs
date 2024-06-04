@@ -7,9 +7,16 @@ public class MarketScript : MonoBehaviour
 {
     ResourceManager ResourceManager;
     PlayerManager PlayerManager;
+    GameManager GameManager;
 
     int[] marketPrices = new int[System.Enum.GetNames(typeof(ResourceType)).Length -1];
     int portalPlanet;
+
+    public void Start()
+    {
+        GameManager.instance.OnNextTurn += randomizeMarketPrices;
+    }
+
 
     public MarketScript(int planetN)
     {

@@ -6,6 +6,7 @@ public class CombatManager : MonoBehaviour
 {
     ResourceManager ResourceManager;
     PlanetManager PlanetManager;
+    GameManager GameManager;
     public readonly int[,] defenceBuildupLevel;
     public readonly int[,] attackPower;
     public readonly int maxDefFromBunker;
@@ -13,6 +14,12 @@ public class CombatManager : MonoBehaviour
     public int[,] destroyers;
     public readonly int destroyerTravelCost;
     public readonly int destroyerAttackValue;
+
+
+    public void Start()
+    {
+        
+    }
 
 
     public CombatManager(int playerN, int planetN, int maxDefFromBunker, int defScaling, int destroyerTravelCost, int destroyerAttackValue)

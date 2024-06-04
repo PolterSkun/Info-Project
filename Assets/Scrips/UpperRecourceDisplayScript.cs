@@ -17,6 +17,7 @@ public class UpperRecourceDisplayScript : MonoBehaviour
     
 
     // Start is called before the first frame update
+    //is called for displaying alle the resource that are held by the player; this is in the wrong place
     void Start()
     {
         GameManager.instance.OnPlanetButtonClick += onPlantButtonClick;
@@ -43,6 +44,8 @@ public class UpperRecourceDisplayScript : MonoBehaviour
         //UpperRecourceDisplay.SetActive(false);
     }
 
+
+    //displays the resouceamount on that planet
     private void onPlantButtonClick()
     {
         
@@ -50,7 +53,7 @@ public class UpperRecourceDisplayScript : MonoBehaviour
         {
             resource = GameManager.rescourceManager.getResourceAmount(GameManager.instance.subTurnCounter, GameManager.instance.currentPlanetNumber, i);
             //Debug.Log("Recource " + i + " ist: " + resource);
-            TMP_Text Display = ResourceNumberDisplay.Find(go => go.name == "RecourceAmount" + i).GetComponent<TMP_Text>();
+            TMP_Text Display = ResourceNumberDisplay.Find(go => go.name == "RecourceAmount" + i).GetComponent<TMP_Text>();//Find(go => go. ...): finds anything after the "." after the second "go"
             if (Display != null)
             {
                 Display.text = resource.ToString();
@@ -61,7 +64,7 @@ public class UpperRecourceDisplayScript : MonoBehaviour
             Parent.SetActive(true); 
         }
     }
-
+    //used to not display the displays
     private void OnPlanetBackButtonClick()
     {
         foreach(GameObject Parent in ResourceNumberDisplayParents)

@@ -21,6 +21,7 @@ public class TurnCounterDisplay : MonoBehaviour
     {
         
     }
+
     public void firstTurnSetUp()
     {
         playerXTrun.SetText("Player 1");

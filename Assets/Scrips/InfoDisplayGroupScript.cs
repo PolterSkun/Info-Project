@@ -6,11 +6,13 @@ using UnityEngine;
 
 public class InfoDisplayGroupScript : MonoBehaviour
 {
+    //For connecting Unity with the script
     [SerializeField] GameObject upperGroup;
     [SerializeField] GameObject lowerGroup;
     [SerializeField] GameObject CostRoof;
     [SerializeField] TextMeshProUGUI BuildingTypName;
 
+    //These are empty lists for Display-Objects 
     private List<GameObject> ResourceIconDisplay = new List<GameObject>();
     private List<GameObject> ResourceNumberDisplay = new List<GameObject>();
 
@@ -21,6 +23,7 @@ public class InfoDisplayGroupScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //subscribes funktions to an event
         GameManager.instance.OnPlanetButtonClick += goToPlanetSpecificView;
         GameManager.instance.OnPlanetBackButtonClick += backFromPlanetSpecificView;
         upperGroup.SetActive(false);
@@ -35,17 +38,22 @@ public class InfoDisplayGroupScript : MonoBehaviour
         //InOutPutSingleDisplay();
         
     }
-
+    //is called when one of the button that look like planets is pressed; it is used to display some important information about the planet
     private void goToPlanetSpecificView()
     {
         upperGroup.SetActive(true);
         lowerGroup.SetActive(true);
     }
+
+    //is the opposite of the funktion above
     private void backFromPlanetSpecificView() 
     {
         upperGroup.SetActive(false);
         lowerGroup.SetActive(false);
     }
+
+
+    //checks what builing name should be displayed
     private void BuildingName()
     {
         switch (BuildingNumber) //Es tut mir innerlich weh das alles zu hardcoden, aber ich hab zu wenig Zeit um einen schönen und funktionierenden Code zu machen
@@ -87,6 +95,8 @@ public class InfoDisplayGroupScript : MonoBehaviour
                 break;
         }
     }
+
+    //isn't finished, but should be used to display the input and the output of a single building of any kind
     private void InOutPutSingleDisplay()
     {
         foreach (Transform Parentchild in upperGroup.transform)
@@ -108,14 +118,19 @@ public class InfoDisplayGroupScript : MonoBehaviour
         Debug.Log("ResourceNumber " + ResourceNumberDisplay.Count);
     }
 
+    //displays the cost for one building of any kind to be build
     public void CostDisplay()
     {
-        listFillerForDisplay(CostRoof);
+        foreach(GameObject Display in ResourceNumberDisplay)
+        {
+            Display.SetActive(true);
+        }
+        listFillerForDisplay(CostRoof); //calls the funktion below to fill the list with the nessesaire DisplayObjects
         int singleCostAmount = 0;
 
         for(int i = 0; i < 8; i++)
         {
-            if (GameManager.rescourceManager.costs[BuildingNumber-1, i] != 0)
+            if (GameManager.rescourceManager.costs[BuildingNumber-1, i] != 0)//checks the amount of resourcetyps and the specific resource amount needed to build the building, then puts it into a array
             {
                 cost[singleCostAmount]  = GameManager.rescourceManager.costs[BuildingNumber-1, i];
                 Debug.Log("CostAmountSpesific" + cost[singleCostAmount]);
@@ -123,7 +138,7 @@ public class InfoDisplayGroupScript : MonoBehaviour
             }
         }
         Debug.Log("CostAmountAll: " + singleCostAmount);
-        for (int i = 0; i < singleCostAmount; i++)
+        for (int i = 0; i < singleCostAmount; i++)//finds the displayobject in the list and display in its Text component the cost
         {
             Debug.Log("i: " + i + ", single: " + singleCostAmount);
             Debug.Log(ResourceNumberDisplay.Count);
@@ -133,7 +148,7 @@ public class InfoDisplayGroupScript : MonoBehaviour
                 Display.text = cost[i].ToString();
             }
         }
-        if(cost.Length > singleCostAmount)
+        if(cost.Length > singleCostAmount)//lets the not used display disappear
         {
             int stillLeft2do = 4-(cost.Length - singleCostAmount);
             for(int i = 0;i < stillLeft2do; i++)
@@ -147,6 +162,8 @@ public class InfoDisplayGroupScript : MonoBehaviour
         }
     }
 
+
+    //fills the list with the displayObjects; also clears the list form the objects before
     private void listFillerForDisplay(GameObject Parent)
     {
         ResourceIconDisplay.Clear();

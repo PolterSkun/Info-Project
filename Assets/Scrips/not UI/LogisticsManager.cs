@@ -10,6 +10,7 @@ public class Logistics : MonoBehaviour
 {
     PlanetManager PlanetManager;
     ResourceManager ResourceManager;
+    GameManager GameManager;
     public readonly int[,] ships;
     public int[,,] travelingResources;
     public readonly int capacity;
@@ -17,6 +18,12 @@ public class Logistics : MonoBehaviour
     public int load;
     public int playerN;
     public int planetN;
+
+    public void Start()
+    {
+        GameManager.instance.OnNextTurn += updateDeliveries;
+    }
+
 
     public Logistics(int playerN, int planetN, int shipCapacity, int travelCostsOfShip)
     {

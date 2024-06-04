@@ -31,17 +31,21 @@ public class ResourceManager : MonoBehaviour
     PlayerManager PlayerManager;
     Logistics Logistics;
     CombatManager CombatManager;
+    GameManager GameManager;
     
 
     public readonly int players;
     public readonly int planets;
     public readonly int[,,] buildings;
     public readonly int[,,] resources;
-    
-    //public readonly int[,,] privateModifiers;
-    
 
-    
+    //public readonly int[,,] privateModifiers;
+
+    public void Start()
+    {
+        GameManager.instance.OnNextTurn += updateProduction;
+    }
+
 
     public ResourceManager(int playersn, int planetsn)
 
@@ -227,7 +231,7 @@ public class ResourceManager : MonoBehaviour
                 //arms factory 50fuel 7 heavy machinery
                 if(checkIfBuildingCanProduce(playerNumber, planetNumber, (int)BuildingType.armsFactory) && PlayerManager.checkIfBuildingEnabled(playerNumber, planetNumber, (int)BuildingType.armsFactory)) 
                 {
-                    //ADD DESTROYER HERE TO COMBAT
+                    CombatManager.editDestroyerCount(playerNumber, planetNumber, buildings[playerNumber, planetNumber, (int)BuildingType.armsFactory]);
 
                     updateBuildingConsumption(playerNumber, planetNumber, (int)BuildingType.armsFactory);
                 }
