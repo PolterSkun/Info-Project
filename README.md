@@ -11,7 +11,7 @@ First, open git bash and input the following line:\
 `git clone https://github.com/PolterSkun/Info-Project.git`\
 This creats a clone of the project on your PC.\
 Then open UnityHub, add the projects to your project list and start the Project.\
-This may not work, due to your Version of Unity, which must match ours, in order to view the project. For creating this project we used `Unity Version "2023.3.3f1"`, which you may download [here]().\
+This may not work, due to your Version of Unity, which must match ours, in order to view the project. We used `Unity Version "2023.3.3f1"`, which you may download [here]().\
 For clarity reasons we divided our scripts into 2 folders: ui and notui.
 
 ### How to play
