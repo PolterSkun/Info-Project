@@ -4,6 +4,8 @@ Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into t
 ## Some Gerneral Information
 ### Why was this Project created?
 It was created as a part of a school project and its main focus was to show what we had learned, to develope new skills and to show them off.
+### Status of the Project
+Due to the nature of a school project we had a limited timeframe to develope the game, and so this game is far from finished. Many lines of code were allready written, but are not yet uesd and therefor not accessible for the player. We are working hard on fixing that.
 ### How to view the source-code in Unity yourself
 First, open git bash and input the following line:\
 `git clone https://github.com/PolterSkun/Info-Project.git`\
