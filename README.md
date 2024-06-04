@@ -6,13 +6,12 @@ Our newest game, `CupcakeSpaceExploitation`, is a game where you can slip into t
 It was created as a part of a school project and its main focus was to show what we had learned, to develope new skills and to show them off.
 ### Status of the Project
 Due to the nature of a school project we had a limited timeframe to develope the game, and so this game is far from finished. Many lines of code were allready written, but are not yet uesd and therefor not accessible for the player. We are working hard on fixing that.
-### How to view the source-code in Unity yourself
-First, open git bash and input the following line:\
-`git clone https://github.com/PolterSkun/Info-Project.git`\
-This creats a clone of the project on your PC.\
-Then open UnityHub, add the projects to your project list and start the Project.\
-This may not work, due to your Version of Unity, which must match ours, in order to view the project. We used `Unity Version "2023.2.3f1"`, which you may download [here](https://unity.com/ja/releases/editor/whats-new/2023.2.3).\
+### Where to view the source-code
+[here](https://github.com/PolterSkun/Info-Project/tree/44c1d42aed0b110c4e5c86217ca80b0c8bea3ed7/Assets/Scrips)\
 For clarity reasons we divided our scripts into 2 folders: ui and notui.
+### How to view all the stuff in Unity
+We used the Unity Version `Unity Version "2023.2.3f1"` to creat this project, so if you want to view all the stuff that was done in Unity itself, you can download the version we used [here](https://unity.com/ja/releases/editor/whats-new/2023.2.3)
+
 
 ### How to play
 You can find the build for our game, `CupcakeSpaceExploitation`, [here]() (does not yet work :( ). Though be warned: This project is far from finished and is subject to many bugs. Futhermore it is NOT feature complete. In fact the main gamplay-loop is not yet accessible for the player to enjoy.
