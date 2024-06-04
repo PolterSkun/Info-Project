@@ -59,5 +59,6 @@ The biggets problem we had to face, was learning C#, since all of us had little 
 ## Class diagram
 ### original Class diagram
 ### final Class diagram
-![](https://github.com/PolterSkun/Info-Project/blob/5dbfc0751d63d14940d7eec144a27f13051370d9/Classdiagram.vpd)
+![](https://github.com/PolterSkun/Info-Project/blob/48489ea50527762e3e66bf4a900dc7f7b3a115f6/readme_resources/Class_diagram_original.png)
 For an easy read, we did not include any get-funktion or parameter for any funktion
+![](https://github.com/PolterSkun/Info-Project/blob/48489ea50527762e3e66bf4a900dc7f7b3a115f6/readme_resources/Classdiagramm.png)
